@@ -1,19 +1,17 @@
 {
   "name": "hello",
-  "esy": {
-    "buildsInSource": "_build",
-    "build": "dune build @all"
-  },
+  "esy": { "buildsInSource": "_build", "build": "dune build @all" },
   "scripts": {
     "watch": "esy b dune build @run_hello_bc -w",
     "start": "esy b dune exec ./Hello.exe"
   },
   "dependencies": {
+    "@opam/base": "v0.14.1",
+    "@opam/core": "v0.14.1",
+    "@opam/graphics": "5.1.2",
+    "@opam/ppx_jane": "*",
     "melange": "melange-re/melange",
-    "@opam/ppx_jane": "*es",
     "ocaml": "4.12.x"
   },
-  "devDependencies": {
-    "@opam/ocaml-lsp-server": "*"
-  }
+  "devDependencies": { "@opam/ocaml-lsp-server": "*" }
 }
