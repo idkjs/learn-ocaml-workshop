@@ -1,0 +1,4 @@
+make: Entering directory `/Users/mando/Github/learn-ocaml-workshop'
+dune build @DEFAULT
+make: Leaving directory `/Users/mando/Github/learn-ocaml-workshop'
+ 
